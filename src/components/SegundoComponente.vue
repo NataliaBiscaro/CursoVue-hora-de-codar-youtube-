@@ -1,7 +1,7 @@
 <template>
 <div>
-    <h1> Esse eu fiz sozinha :) </h1>
-    <p> Eu me sinto {{ status }} . </p>
+    <h1> Componente Dois </h1>
+    <p> está {{ status }} . </p>
 </div>
 
 </template>
@@ -11,7 +11,7 @@
         name: 'SegundoComponente',
         data() {
             return{
-              status: 'feliz por estar evoluindo'
+              status: 'funcionando'
             }
         }
     }
