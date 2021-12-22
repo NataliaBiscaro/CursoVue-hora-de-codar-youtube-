@@ -2,13 +2,19 @@
 <div>
     <h1> Componente Dois </h1>
     <p> está {{ status }} . </p>
+    <PrimeiroComponente/>
 </div>
-
 </template>
 
 <script>
+
+    import PrimeiroComponente from './PrimeiroComponente.vue';
     export default{
-        name: 'SegundoComponente',
+        
+        name: 'SegundoComponenteTeste',
+        components: {
+            PrimeiroComponente
+        },
         data() {
             return{
               status: 'funcionando'
