@@ -1,5 +1,6 @@
 <template>
  <div>
+   <Header  :esta_logado="true"/>
     teste1 
     <PrimeiroComponente/>
     teste 2
@@ -13,22 +14,24 @@
 
 <script>
 
-  import PrimeiroComponente from './components/PrimeiroComponente.vue';
-  import SegundoComponenteNatalia from './components/SegundoComponente.vue';
-  import LifeCycle from './components/LifeCycle.vue';
-  import Pessoa from './components/Pessoa.vue'
+  import Header from './components/form/Header.vue' ;
+  import PrimeiroComponente from './components/form/PrimeiroComponente.vue';
+  import SegundoComponenteNatalia from './components/form/SegundoComponente.vue';
+  import LifeCycle from './components/form/LifeCycle.vue';
+  import Pessoa from './components/form/Pessoa.vue'
 
     export default {
       name: 'App', 
       components: {
+        Header,
         PrimeiroComponente,
         SegundoComponenteNatalia,
         LifeCycle,
         Pessoa
       },
-            LifeCycledata() {
-        return {
-          dado: "testanduuuu"
+        data () { 
+          return {
+            dado: "testanduuuu"
         }
       } 
     }
